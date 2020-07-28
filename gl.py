@@ -1,8 +1,8 @@
+#Andree Toledo 18439
+#Laboratorio 3 OBJ
+
 import struct
 from obj import Obj
-
-
-
 
 
 def char(myChar):

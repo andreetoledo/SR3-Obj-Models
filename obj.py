@@ -1,3 +1,6 @@
+#Andree Toledo 18439
+#Laboratorio 3 OBJ
+
 class Obj(object):
     def __init__(self, filename):
         with open(filename) as f:
@@ -15,12 +18,8 @@ class Obj(object):
                 # Split vertices
                 if prefix == 'v':
                     # vertice
-                    self.vertices.append(
-                        list(map(float, value.split(' ')))
-                    )
+                    self.vertices.append(list(map(float, value.split(' '))))
                 # Split faces
                 elif prefix == 'f':
                     # face
-                    self.faces.append (
-                        [ list(map(int , face.split('/'))) for face in value.split(' ') ]
-                    )
+                    self.faces.append ([ list(map(int , face.split('/'))) for face in value.split(' ') ])
